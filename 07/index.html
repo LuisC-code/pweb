@@ -1,14 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+  <meta charset="UTF-8">
+  <title>Famílias de Fontes - CSS</title>
+  <style>
+    /* Fonte base do contêiner */
+    .conteudo {
+      font-size: 30px; /* Altere aqui conforme solicitado no exercício final */
+    }
+
+    /* Serif - com fallback e estilo */
+    .serif {
+      font-family: "Times New Roman", Georgia, Serif;
+      font-style: italic;
+      font-size: 2em; /* 60px */
+    }
+
+    /* Sans-serif - com fallback e estilo */
+    .sans-serif {
+      font-family: Arial, Helvetica, sans-serif;
+      font-style: normal;
+      font-size: 2.5em; /* 75px */
+    }
+
+    /* Monospace - com fallback e estilo */
+    .monospace {
+      font-family: "Courier New", Courier, monospace;
+      font-style: oblique;
+      font-size: 3em; /* 90px */
+    }
+
+    /* Cursive - com fallback e estilo */
+    .cursive {
+      font-family: "Brush Script MT", cursive;
+      font-style: italic;
+      font-size: 3.75em; /* 112.5px */
+    }
+
+    /* Fantasy - com fallback e estilo */
+    .fantasy {
+      font-family: Impact, fantasy;
+      font-style: normal;
+      font-size: 4em; /* 120px */
+    }
+  </style>
 </head>
 <body>
-    
+  <div class="conteudo">
+    <p class="serif">Esta é uma fonte Serif.</p>
+    <p class="sans-serif">Esta é uma fonte Sans-serif.</p>
+    <p class="monospace">Esta é uma fonte Monospace.</p>
+    <p class="cursive">Esta é uma fonte Cursive.</p>
+    <p class="fantasy">Esta é uma fonte Fantasy.</p>
+  </div>
 </body>
 </html>
