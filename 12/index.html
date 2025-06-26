@@ -31,13 +31,11 @@
       position: relative;
     }
 
-    /* Estilo diferenciado para pessoas com idade 30 */
     li.pessoa[data-idade="30"] {
       background-color: #e0ffe0;
       border-color: #7dd97d;
     }
 
-    /* Inserindo conteúdo com ::before e ::after */
     li.pessoa::before {
       content: "Idade: " attr(data-idade) " | CPF: " attr(data-cpf) " | Altura: " attr(data-altura) " → ";
       font-size: 0.85em;
