@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Portal de Notícias</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+
+    main {
+      flex: 3;
+    }
+
+    aside {
+      flex: 1;
+      background-color: #e8e8e8;
+      padding: 15px;
+      border-left: 2px solid #ccc;
+    }
+
+    aside h3 {
+      margin-top: 0;
+    }
+
+    article {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+    }
+
+    article img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+
+    section {
+      margin-bottom: 10px;
+    }
+
+    time {
+      color: gray;
+      font-size: 0.9em;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Política</a>
+    <a href="#">Economia</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Esportes</a>
+  </nav>
+
+  <div class="container">
+
+    <main>
+      <article>
+        <header>
+          <h2>Nova Tecnologia Revoluciona o Ensino</h2>
+          <p>Por <strong>Ana Souza</strong> - <time datetime="2025-06-25">25 de junho de 2025</time></p>
+        </header>
+
+        <section>
+          <img src="https://via.placeholder.com/600x300" alt="Imagem da notícia">
+          <p>Uma nova plataforma de ensino baseada em inteligência artificial está transformando a forma como alunos aprendem em escolas públicas. O sistema adapta conteúdos em tempo real conforme o desempenho do estudante.</p>
+        </section>
+
+        <section>
+          <p>Educadores afirmam que a tecnologia ajuda a personalizar o ensino e garantir melhores resultados.</p>
+        </section>
+      </article>
+
+      <article>
+        <header>
+          <h2>Brasil lidera produção de energia solar</h2>
+          <p>Por <strong>João Lima</strong> - <time datetime="2025-06-24">24 de junho de 2025</time></p>
+        </header>
+
+        <section>
+          <img src="https://via.placeholder.com/600x300" alt="Imagem da notícia">
+          <p>Com investimentos recordes, o Brasil se destaca no cenário mundial em geração de energia limpa. Especialistas projetam crescimento contínuo nos próximos anos.</p>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <h3>Propaganda</h3>
+      <img src="https://via.placeholder.com/200x200" alt="Anúncio 1">
+      <p>Confira os cursos de tecnologia com desconto especial.</p>
+
+      <h3>Autor em destaque</h3>
+      <p>Leia mais reportagens de <strong>Ana Souza</strong> sobre inovação e educação.</p>
+    </aside>
+  </div>
+
+  <footer>
+    &copy; 2025 - Portal de Notícias. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
