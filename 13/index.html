@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 13 - CSS3</title>
+
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .box {
+      width: 300px;
+      padding: 20px;
+      border: 15px solid #333;
+      margin: 20px auto;
+      background-color: white;
+
+      -webkit-border-radius: 15px;
+      -moz-border-radius: 15px;
+      border-radius: 15px;
+
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    fieldset {
+      padding: 10px;
+      border: 1px solid #aaa;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+
+    .comparacao {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 40px;
+    }
+
+    .modelo {
+      width: 135px;
+      padding: 20px;
+      border: 15px solid #666;
+      background-color: #ddd;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .modelo.border-box {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .modelo h2 {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Teste de Normalize, Box Sizing e Border Radius</h1>
+
+  <div class="box">
+    <fieldset>
+      <legend>Informações</legend>
+      <label>Nome: <input type="text" /></label><br><br>
+      <label>Email: <input type="email" /></label>
+    </fieldset>
+  </div>
+
+  <div class="comparacao">
+    <div class="modelo">
+      <h2>Modelo Padrão</h2>
+      width: 100px<br>
+      padding: 20px<br>
+      border: 15px<br>
+      <strong>Total: 150px</strong>
+    </div>
+
+    <div class="modelo border-box">
+      <h2>border-box</h2>
+      width: 100px<br>
+      padding: 20px<br>
+      border: 15px<br>
+      <strong>Total: 100px</strong>
+    </div>
+  </div>
+
+</body>
+</html>
