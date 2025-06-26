@@ -4,144 +4,59 @@
   <meta charset="UTF-8">
   <title>Atividade 09 - Posicionamento</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-
+    /* Centraliza o conteúdo horizontalmente */
     .conteudo {
       width: 600px;
-      margin: 20px auto;
+      margin-left: auto;
+      margin-right: auto;
       padding: 20px;
-      background-color: #f9f9f9;
-      border: 1px solid #ccc;
+      background-color: #f0f0f0;
     }
 
+    /* Estilo base para todas as caixas */
     .caixa {
       width: 150px;
       height: 150px;
-      margin: 10px;
+      background-color: #555;
       color: white;
       text-align: center;
       line-height: 150px;
+      margin: 10px;
       font-weight: bold;
     }
 
+    /* Posicionamento relativo */
     #relativa {
-      background-color: #007bff;
       position: relative;
-      top: 20px;
-      left: 30px;
+      top: 10px;
+      left: 20px;
+      background-color: #007bff;
     }
 
+    /* Posicionamento absoluto */
     #absoluta {
-      background-color: #28a745;
       position: absolute;
-      top: 100px;
+      top: 300px;
       left: 200px;
+      background-color: #28a745;
     }
 
+    /* Posicionamento fixo */
     #fixa {
-      background-color: #dc3545;
       position: fixed;
       top: 20px;
       right: 20px;
+      background-color: #dc3545;
     }
-
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center;
-      z-index: 999;
-    }
-
-    .sidebar {
-      background-color: #444;
-      color: white;
-      width: 200px;
-      height: 100%;
-      position: fixed;
-      left: 0;
-      top: 60px;
-      padding: 10px;
-    }
-
-    .main {
-      margin-left: 220px;
-      padding-top: 100px;
-    }
-
-    .display-demo div {
-      margin: 10px 0;
-      padding: 10px;
-      border: 1px dashed #666;
-    }
-
-    .inline {
-      display: inline;
-      background-color: #ffc107;
-    }
-
-    .block {
-      display: block;
-      background-color: #17a2b8;
-    }
-
-    .inline-block {
-      display: inline-block;
-      background-color: #6f42c1;
-      width: 100px;
-    }
-
-    .none {
-      display: none;
-    }
-
-    .flex {
-      display: flex;
-      gap: 10px;
-    }
-
   </style>
 </head>
 <body>
+  <div class="conteudo">
+    <h2>Caixas com diferentes posicionamentos</h2>
 
-  <header>
-    Cabeçalho Fixo
-  </header>
-
-  <div class="sidebar">
-    Sidebar Fixa
-  </div>
-
-  <div class="main">
-
-    <div class="conteudo">
-      <h2>Exemplo de Caixas com Posicionamento</h2>
-
-      <div class="caixa" id="relativa">Relativa</div>
-      <div class="caixa" id="absoluta">Absoluta</div>
-      <div class="caixa" id="fixa">Fixa</div>
-    </div>
-
-    <div class="conteudo display-demo">
-      <h2>Estudo: Propriedade Display</h2>
-
-      <div class="inline">Inline</div>
-      <div class="block">Block</div>
-      <div class="inline-block">Inline-Block</div>
-      <div class="flex">
-        <div style="background:#999;padding:10px;">Flex Item 1</div>
-        <div style="background:#bbb;padding:10px;">Flex Item 2</div>
-      </div>
-      <div class="none">Este conteúdo está com display: none</div>
-    </div>
-
+    <div class="caixa" id="relativa">Relativa</div>
+    <div class="caixa" id="absoluta">Absoluta</div>
+    <div class="caixa" id="fixa">Fixa</div>
   </div>
 </body>
 </html>
