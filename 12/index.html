@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 12 - Atributo Data</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    li.pessoa {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      margin-bottom: 10px;
+      padding: 15px;
+      cursor: pointer;
+      position: relative;
+    }
+
+    /* Estilo diferenciado para pessoas com idade 30 */
+    li.pessoa[data-idade="30"] {
+      background-color: #e0ffe0;
+      border-color: #7dd97d;
+    }
+
+    /* Inserindo conteúdo com ::before e ::after */
+    li.pessoa::before {
+      content: "Idade: " attr(data-idade) " | CPF: " attr(data-cpf) " | Altura: " attr(data-altura) " → ";
+      font-size: 0.85em;
+      color: #555;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    li.pessoa::after {
+      content: " (Clique para mostrar nome)";
+      color: #999;
+      font-size: 0.75em;
+    }
+
+    #resultado {
+      text-align: center;
+      font-size: 1.2em;
+      margin-top: 30px;
+      color: #333;
+    }
+  </style>
+
+  <script>
+    function mostravalor(elemento) {
+      const nome = elemento.textContent;
+      alert("Nome: " + nome);
+      document.getElementById("resultado").textContent = "Você clicou em: " + nome;
+    }
+  </script>
+</head>
+<body>
+
+  <h1>Lista de Pessoas</h1>
+
+  <ul>
+    <li class="pessoa" data-altura="1.75m" data-idade="25" data-cpf="123.456.789-00" onclick="mostravalor(this)">Ana Clara</li>
+    <li class="pessoa" data-altura="1.68m" data-idade="30" data-cpf="987.654.321-00" onclick="mostravalor(this)">Bruno Souza</li>
+    <li class="pessoa" data-altura="1.82m" data-idade="28" data-cpf="456.789.123-00" onclick="mostravalor(this)">Carla Dias</li>
+    <li class="pessoa" data-altura="1.60m" data-idade="30" data-cpf="321.654.987-00" onclick="mostravalor(this)">Daniela Costa</li>
+  </ul>
+
+  <div id="resultado"></div>
+
+</body>
+</html>
