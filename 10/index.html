@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 10 - Formatação de Link e HTML5</title>
+  <style>
+    <body>
+        <div class= "menu">
+
+            <a href="http://www.google.com">Google</a>
+            <a href="http://www.techtudo.com">Tech Tudo</a>
+            <a href="http://www.maujor.com">Maujor</a>
+
+        </div>
+    </body>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    header, footer, nav {
+      background-color: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    nav a:link {
+      color: white;
+    }
+
+    nav a:visited {
+      color: #ccc;
+    }
+
+    nav a:hover {
+      background-color: #555;
+      color: yellow;
+    }
+
+    nav a:active {
+      background-color: #222;
+      color: red;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+      overflow: auto;
+    }
+
+    .card header {
+      background-color: #eee;
+      color: #333;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .card img {
+      float: left;
+      margin-right: 15px;
+      width: 150px;
+      height: auto;
+    }
+
+    .card footer {
+      background-color: #f5f5f5;
+      padding: 10px;
+      color: #666;
+      font-size: 0.9em;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portal de Notícias</h1>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Política</a>
+    <a href="#">Esportes</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <header>G1 Notícias</header>
+      <img src="https://via.placeholder.com/150" alt="Imagem da Notícia 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fermentum, nisl vel cursus congue, risus lorem pretium eros, ac bibendum eros magna et urna.</p>
+      <footer>Publicado em: 25/06/2025</footer>
+    </div>
+
+    <div class="card">
+      <header>UOL</header>
+      <img src="https://via.placeholder.com/150" alt="Imagem da Notícia 2">
+      <p>Aliquam tincidunt, nisi non congue accumsan, libero magna ullamcorper turpis, sed dictum lectus sapien non nisl. Donec nec justo vitae purus.</p>
+      <footer>Publicado em: 24/06/2025</footer>
+    </div>
+
+    <div class="card">
+      <header>Terra</header>
+      <img src="https://via.placeholder.com/150" alt="Imagem da Notícia 3">
+      <p>Sed euismod sapien ut erat fermentum, at laoreet elit congue. Fusce ac mi in lorem cursus egestas. Mauris viverra lectus a lorem varius.</p>
+      <footer>Publicado em: 23/06/2025</footer>
+    </div>
+
+    <div class="card">
+      <header>Estadão</header>
+      <img src="https://via.placeholder.com/150" alt="Imagem da Notícia 4">
+      <p>Integer vel felis nec magna cursus volutpat. Suspendisse potenti. Nulla vitae posuere nulla. Vivamus non nisl et augue fringilla porttitor.</p>
+      <footer>Publicado em: 22/06/2025</footer>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 - Portal de Notícias. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
