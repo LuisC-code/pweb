@@ -1,12 +1,47 @@
-.box{
-    background:url(../camera.png);
-    width: 300px;
-    height: 300px;
-    margin: 50px;
-    box-sizing: border-box;
-    box-shadow: 10px 10px 5px #888888;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
 }
-.box h1 {
-    background: rgb(255,255,255,0.5);
-    text-shadow: 3px 3px 3px  orange;
+
+h1 {
+    text-align: center;
+    color: rgba(0, 128, 255, 0.8);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gradiente-linear {
+    background: linear-gradient(to right, #ff0000, #0000ff);
+}
+
+.gradiente-radial {
+    background: radial-gradient(circle, #00ff00, #004400);
+}
+
+.img-transparente {
+    display: block;
+    margin: 20px auto;
+    width: 300px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.img-transparente:hover {
+    opacity: 1;
 }
