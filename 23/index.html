@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício - Gerenciando Pessoas</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+        button {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            cursor: pointer;
+        }
+        #listaPessoasDiv {
+            border: 1px solid #ccc;
+            padding: 15px;
+            min-height: 50px;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        let listaPessoas = [];
+
+        function adicionarPessoa() {
+            let nome = prompt("Digite o nome da pessoa para adicionar:");
+            if (nome) {
+                listaPessoas.push(nome);
+                atualizarListaNaTela();
+            }
+        }
+
+        function removerPessoa() {
+            if (listaPessoas.length > 0) {
+                let pessoaRemovida = listaPessoas.pop();
+                alert("A pessoa " + pessoaRemovida + " foi removida da lista.");
+                atualizarListaNaTela();
+            } else {
+                alert("A lista está vazia, não há ninguém para remover.");
+            }
+        }
+   
+        function atualizarListaNaTela() {
+            let div = document.getElementById("listaPessoasDiv");
+            div.innerHTML = "";
+            
+            if (listaPessoas.length > 0) {
+                for (let i = 0; i < listaPessoas.length; i++) {
+                    div.innerHTML += (i + 1) + ". " + listaPessoas[i] + "<br>";
+                }
+            } else {
+                div.innerHTML = "A lista de pessoas está vazia.";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <h1>Gerenciando Lista de Pessoas</h1>
+    <button onclick="adicionarPessoa()">Adicionar Pessoa</button>
+    <button onclick="removerPessoa()">Remover Última Pessoa</button>
+
+    <div id="listaPessoasDiv">
+        A lista de pessoas está vazia.
+    </div>
+
+</body>
+</html>
