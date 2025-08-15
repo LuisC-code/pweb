@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: #eee;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.caixa1 {
+    width: 200px;
+    height: 200px;
+    background: blue;
+    color: white;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 1s, transform 1s;
+}
+
+.caixa1:hover {
+    background: yellow;
+    transform: scale(1.1);
+    color: black;
+}
+
+@keyframes mudarCor {
+    from {
+        background: red;
+    }
+    to {
+        background: green;
+    }
+}
+
+.caixa2 {
+    width: 200px;
+    height: 200px;
+    background: red;
+    color: white;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: mudarCor 2s 3 alternate forwards;
+    animation-delay: 2s;
+}
+
+@keyframes girarTrocar {
+    0% {
+        transform: rotate(0deg);
+        background: orange;
+    }
+    25% {
+        transform: rotate(90deg);
+        background: pink;
+    }
+    50% {
+        transform: rotate(180deg);
+        background: lightblue;
+    }
+    75% {
+        transform: rotate(270deg);
+        background: lightgreen;
+    }
+    100% {
+        transform: rotate(360deg);
+        background: orange;
+    }
+}
+
+.caixa3 {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: girarTrocar 10s infinite linear;
+}
