@@ -50,23 +50,23 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRzV+tK2jK2zJ+1T1L8o9B43tTz2d2I3a3eI3cI3cI3c" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 
-    <script>.
+    <script>
         $("#mybtn").click(function() {
-            var cep = $("#cep").val(); [cite: 388]
+            var cep = $("#cep").val();
             
-            var url = "https://viacep.com.br/ws/" + cep + "/json/"; [cite: 390]
+            var url = "https://viacep.com.br/ws/" + cep + "/json/";
             
             $.getJSON(url, function(retorno) {
                 if (!("erro" in retorno)) {
-                    $("#rua").val(retorno.logradouro); [cite: 403]
-                    $("#bairro").val(retorno.bairro); [cite: 403]
-                    $("#cidade").val(retorno.localidade); [cite: 403]
-                    $("#uf").val(retorno.uf); [cite: 403]
-                    $("#ibge").val(retorno.ibge); [cite: 403]
+                    $("#rua").val(retorno.logradouro);
+                    $("#bairro").val(retorno.bairro);
+                    $("#cidade").val(retorno.localidade);
+                    $("#uf").val(retorno.uf);
+                    $("#ibge").val(retorno.ibge);
                 } else {
-                    alert("CEP não encontrado."); [cite: 386]
+                    alert("CEP não encontrado.");
                 }
             });
         });
